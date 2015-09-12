@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Photo Gallery</title>
+	<script type="text/javascript">
+	var CCM_DISPATCHER_FILENAME = '/index.php';
+	var CCM_CID = 574;
+	var CCM_EDIT_MODE = false;
+	var CCM_ARRANGE_MODE = false;
+	var CCM_IMAGE_PATH = "/concrete/images";
+	var CCM_TOOLS_PATH = "/index.php/tools/required";
+	var CCM_BASE_URL = "http://www.c5theme.com";
+	var CCM_REL = "";
+	</script>
+	<link rel="shortcut icon" href="/files/3113/4817/1270/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/files/3113/4817/1270/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/files/8113/4817/1288/apple-touch-icon-57-precomposed.png"  />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/concrete/css/ccm.base.css" />
+	<script type="text/javascript" src="http://cdn.c5theme.com/concrete/js/jquery.js"></script>
+	<script type="text/javascript" src="http://cdn.c5theme.com/concrete/js/ccm.base.js"></script>
+	<style type="text/css"> 
+	 #blockStyle8919Header365 {background-repeat:no-repeat; margin:0 0 20px 0; } 
+	 #blockStyle8939Header225 {background-repeat:no-repeat; margin:0 0 40px 0; } 
+	</style>
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_buttons/blocks/bootstrap_button/view.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/autonav_pro/blocks/autonav_pro/css/autonav_pro_default.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/autonav_pro/blocks/autonav_pro/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/photo_swipe/blocks/photo_swipe/view.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/core_commerce/css/ccm.core.commerce.cart.css" />
+	<script type="text/javascript" src="http://cdn.c5theme.com/packages/core_commerce/js/ccm.core.commerce.cart.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/concrete/css/jquery.ui.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/hostco3/blocks/autonav_pro/templates/hostco3_top/css/font-awesome.css" />
+	<script type="text/javascript" src="http://cdn.c5theme.com/concrete/js/swfobject.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/masonry/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/masonry/css/blueimp-gallery-indicator.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/masonry/css/blueimp-gallery-video.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/masonry/css/blueimp-gallery.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/concrete/blocks/form/view.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/popout/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/popout/css/blueimp-gallery-indicator.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/popout/css/blueimp-gallery-video.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.c5theme.com/packages/bootstrap_image_gallery/blocks/bootstrap_image_gallery/templates/popout/css/blueimp-gallery.css" />
+	<script type="text/javascript" src="http://cdn.c5theme.com/packages/flexslider/blocks/youtube/templates/youtube_collector/js/iframe_api.js"></script>
+	<link rel="stylesheet" media="screen" type="text/css" href="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/css/bootstrap.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/css/docs.css" />
+	<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/jquery.easing.1.3.js"></script>
+	<link rel="stylesheet" media="screen" type="text/css" href="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/css/bootstrap-modal.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/css/jquery.ui.css" />
+	<script type="text/javascript">
+	    var ie = 9;
+	</script>
+	<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/jquery.backstretch.min.js"></script>
+	<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/jquery.ui.js"></script>	
+    <script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/jquery.pnotify.min.js"></script>
+</head>
+
+<body data-target=".bs-sidebar" style="opacity:0">
+
+<div class="white-bg">
+<div class="clearfix"></div>	
+<div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav navigation overflow" id="main-nav">
+  <div class="container">
+	<button class="navbar-toggle bs-navbar-btn" type="button" id="show-navigation">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	<div class="clearfix"></div>
+	<div class="navbar-brand"></div>    
+  </div>
+</div>
+
+<div id="content">
+<script>
+  $(function() {
+  $(".full-title-bg").backstretch("http://cdn.c5theme.com/packages/hostco3/themes/hostco3/images/bg.jpg");
+  });
+</script>
+ <div class="full-title-bg">
+	<div class="container">	
+		<div class="row">
+			<div class="col col-lg-12">
+				<h2>Welcome to Photo Gallery</h2>
+			</div>
+		</div>
+	</div>	
+</div>
+<div class="container">
+<div class="row"></div>
+<div class="row">
+<div class="col col-lg-12">
+<div id="blockStyle8919Header365" class=" ccm-block-styles" >
+<div class="pro_navbar pro_navbar8919"  id="pro_navbar8919"><a class="pronav_btn_navbar pronav_btn_navbar8919">
+<span class="pronav_icon_bar"></span>
+<span class="pronav_icon_bar"></span>
+<span class="pronav_icon_bar"></span>
+</a><div class="clear"></div><div class="pronav_collapse nav_collapse pronav_collapse8919"><ol class="pronav_list pronav_list_dark pronav_list8919" id="pronav_list8919"><li class=" nav-first nav-item-1229"><a href="index.html">Icons</a></li><li><a class="iconsdiv">Slide Show</a></li></ol></div>
+ <div style="clear:both;line-height:0"></div>
+ </div>
+
+<style type="text/css">
+	@media(max-width:1020px){
+	#pronav_list8919{float:none}
+
+	.pronav_btn_navbar8919{
+		display:block
+	}
+	.pronav_collapse8919{
+		display:none;
+		padding:5px
+	}
+	.pronav_collapse #pronav_list8919 > li {
+		float: none;
+	}
+	#pronav_list8919 > li > a {
+		display:block
+	}
+	.pro_navbar8919 #pronav_list8919 > li > .dropdown-menu:after, .lexus_efx .pro_navbar #pronav_list8919 > li > .dropdown-menu:before,.pro_navbar8919 ol.dropdown-menu, .lexus_efx ol.dropdown-menu, div#main-container #header ol#pronav_list8919 ol.dropdown-menu,#pronav_list8919 li,div#main-container ol#pronav_list8919 ol.dropdown-menu{
+		position:static!important;
+		float:none!important
+	}
+	#pronav_list8919  li  a {
+		position:relative;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		margin-bottom:2px
+	}
+	.pro_navbar #pronav_list8919 > li > .dropdown-menu:after, .lexus_efx .pro_navbar #pronav_list8919 > li > .dropdown-menu:before{
+		display:block
+	}
+	#pronav_list8919 .dropdown-menu,#pronav_list8919 .dropdown-menu:before,#pronav_list8919 .dropdown-menu:after{
+		background-color:transparent;
+		border-color:transparent!important;
+		-webkit-box-shadow:none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	.pronav_collapse #pronav_list8919 .sublvl{
+		width:auto!important
+	}
+	.pro_navbar8919 .dropdown-menu a,.pro_navbar8919 .dropdown-menu a:visited, .pro_navbar #pronav_list8919 .dropdown-menu a{
+		padding: 10px 15px;
+		color:#999999;
+		position:relative
+	}
+	.pro_navbar8919 .dropdown-menu .caret,#pronav_list8919 .open .dropdown-menu .caret{
+		border-color: #fff transparent transparent transparent;
+	}
+	.pro_navbar #pronav_list8919 .caret ,#pronav_list8919 .open  .caret{
+		border-color: #fff transparent transparent transparent ;
+	}
+	.pro_navbar8919 .dropdown-menu .nav-selected > a,
+	.pro_navbar8919 .dropdown-menu  li.open > a,
+	.pro_navbar8919 .dropdown-menu .nav-selected > a:hover,
+	.pro_navbar #pronav_list8919 .dropdown-menu .nav-selected > a,
+	.pro_navbar #pronav_list8919 .dropdown-menu  li.open > a,
+	.pro_navbar #pronav_list8919 .dropdown-menu .nav-selected > a:hover,
+	.pro_navbar #pronav_list8919 .dropdown-menu  li > a:focus{
+		color: #ffffff;
+		text-decoration: none;
+		background-color: #0088cc;
+		background-color: #0081c2;
+		background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+		background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+		background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+		background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+		background-repeat: repeat-x;
+		outline: 0;	
+	}
+	#pronav_list8919 .search-query {
+		max-width:200px!important;
+		width:200px;
+		margin:5px auto 5px;
+	}
+
+	.pro_navbar #pronav_list8919 > li.search_container {
+		float: none;
+		text-align: center;
+	}
+	} @media(max-width:480px){#pronav_list8919 .search-query {width:120px!important}} @media(min-width:1020px){
+
+		.pronav_collapse8919{
+			display:block!important;overflow:visible!important;
+		}
+		.pronav_btn_navbar8919{display:none!important}
+	} #pronav_list8919 .sublvl{min-width:100px}
+		@media(max-width:480px){#pronav_list8919 .sublvl{min-width:100%} }
+	</style>
+ </div>	
+ <div id="blockStyle8939Header225" class=" ccm-block-styles" >
+ <style >
+  .c5-edit-disable{width:100%;min-height:20px;background:#999999;padding:10px;text-align:center;color:#fff}
+</style>
+<style type="text/css">
+	#Gallery8939 li a {margin:0px}
+	#gallery_block_8939 ul li:nth-child(100n+1) {clear:left}
+</style>
+<style>
+
+	div.img {
+	    margin: 5px;
+	    padding: 5px;
+	    box-shadow: 5px 5px 5px #888888;
+	    height: auto;
+	    width: auto;
+	    float: left;
+	    text-align: center;
+	}	
+
+	div.img img {
+	    display: inline;
+	    margin: 5px;
+	    border: 1px solid #ffffff;
+	}
+
+	div.img a:hover img {
+	    box-shadow: 10px 10px 5px #888888;
+	}
+
+	div.desc {
+	  text-align: center;
+	  font-weight: normal;
+	  width: 120px;
+	  margin: 5px;
+	}
+	textarea{
+	  border: 0px;
+	}
+</style>
+
+<script>
+  $(".iconsdiv").click(function(){
+  $(".img").hide();
+  $("#slider").show();
+  });
+</script>
+<style>
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);  
+
+	html {
+	  border-top: 5px solid #fff;
+	  background: #58DDAF;
+	  color: #2a2a2a;
+	}
+
+	html, body {
+	  margin: 0;
+	  padding: 0;
+	  font-family: 'Open Sans';
+	}
+
+	h1 {
+	  color: #fff;
+	  text-align: center;
+	  font-weight: 300;
+	}
+
+	#slider {
+	  position: relative;
+	  overflow: hidden;
+	  margin: 20px auto 0 auto;
+	  border-radius: 4px;
+	  display: none;
+	}
+
+	#slider ul {
+	  position: relative;
+	  margin: 0;
+	  padding: 0;
+	  height: 200px;
+	  list-style: none;
+	}
+
+	#slider ul li {
+	  position: relative;
+	  display: block;
+	  float: left;
+	  margin: 0;
+	  padding: 0;
+	  width: 500px;
+	  height: 300px;
+	  background: #ccc;
+	  text-align: center;
+	  line-height: 300px;
+	}
+
+	a.control_prev, a.control_next {
+	  position: absolute;
+	  top: 40%;
+	  z-index: 999;
+	  display: block;
+	  padding: 4% 3%;
+	  width: auto;
+	  height: auto;
+	  background: #2a2a2a;
+	  color: #fff;
+	  text-decoration: none;
+	  font-weight: 600;
+	  font-size: 18px;
+	  opacity: 0.8;
+	  cursor: pointer;
+	}
+
+	a.control_prev:hover, a.control_next:hover {
+	  opacity: 1;
+	  -webkit-transition: all 0.2s ease;
+	}
+
+	a.control_prev {
+	  border-radius: 0 2px 2px 0;
+	}
+
+	a.control_next {
+	  right: 0;
+	  border-radius: 2px 0 0 2px;
+	}
+
+	.slider_option {
+	  position: relative;
+	  margin: 10px auto;
+	  width: 160px;
+	  font-size: 18px;
+	}
+
+</style>
+
+<script>
+  jQuery(document).ready(function ($) {
+
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+  var slideCount = $('#slider ul li').length;
+  var slideWidth = $('#slider ul li').width();
+  var slideHeight = $('#slider ul li').height();
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('#slider').css({ width: slideWidth, height: slideHeight });
+  
+  $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+  $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+
+});    
+</script>
+<div class="img">
+ <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Klematis" width="110" height="90"></a>
+ <div class="desc"><textarea rows="4" cols="15" placeholder="add text over here"></textarea></div>
+</div>
+<div class="img">
+ <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg" alt="Klematis" width="110" height="90"></a>
+ <div class="desc"><textarea rows="4" cols="15" placeholder="add text over here"></textarea></div>
+</div>
+<div class="img">
+ <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg" alt="Klematis" width="110" height="90"></a>
+ <div class="desc"><textarea rows="4" cols="15" placeholder="add text over here"></textarea></div>
+</div>
+<div class="img">
+ <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg" alt="Klematis" width="110" height="90"></a>
+ <div class="desc"><textarea rows="4" cols="15" placeholder="add text over here"></textarea></div>
+</div>
+<h1>Incredibly Basic Slider</h1>
+<div id="slider">
+  <a href="#" class="control_next">>></a>
+  <a href="#" class="control_prev"><<</a>
+  <ul>
+    <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Klematis" width="500" height="300"></li>
+    <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Klematis" width="500" height="300"></li>
+    <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Klematis" width="500" height="300"></li>
+    <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Klematis" width="500" height="300"></li>
+  </ul>  
+</div>
+
+<div class="row">
+  <div class="col col-lg-8"></div>
+  <div class="col col-lg-4"></div>						
+</div>
+<div class="row">
+  <div class="col col-lg-6"></div>
+  <div class="col col-lg-6"></div>			
+</div>
+</div>		
+
+<!-- Site footer -->
+<div class="bs-bottom">
+<div class="footer"> 
+<div class="container">
+  <div class="row">
+     <div class="col col-lg-12"></div>
+  </div>	
+</div>
+</div>
+<div class="footer2">
+    <div class="container">
+		<div class="row">
+			<div class="col col-lg-3 col-sm-6 "></div>
+			<div class="col col-lg-3 col-sm-6 "></div>
+			<div class="col col-lg-3 col-sm-6 "></div>
+			<div class="col col-lg-3 col-sm-6 "></div>
+		</div>	
+	</div>
+  </div>
+<div class="footer3">
+    <div class="container">
+		<div class="row">
+			<div class="col col-lg-6">     
+			<div class="col col-lg-6 t-right">     
+				<h4>Created by Rishi</h4>
+			</div>
+		</div>	
+	</div>
+  </div>
+</div>
+</div>
+</div>
+
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/bootstrap.min.js"></script>
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/hammer.min.js"></script>
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/jquery.hammer.js"></script>
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/jquery.navobile.min.js"></script>
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/bootstrap-modalmanager.js"></script>
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/bootstrap-modal.js"></script>
+<script src="http://cdn.c5theme.com/packages/hostco3/themes/hostco3/js/app.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/packages/livicons/js/raphael-min.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/packages/livicons/js/json2.min.js"></script>
+<script src="/index.php/tools/packages/livicons/default"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/concrete/js/jquery.form.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/concrete/js/jquery.ui.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/packages/autonav_pro/js/autonavProApp.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/packages/photo_swipe/js/jquery.preloader.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/packages/photo_swipe/js/klass.min.js"></script>
+<script type="text/javascript" src="http://cdn.c5theme.com/packages/photo_swipe/js/code.photoswipe.jquery-3.0.5.min.js"></script>
+<script type="text/javascript">
+	(function(window, $, PhotoSwipe){
+		$(document).ready(function(){
+	var
+	options = {captionAndToolbarAutoHideDelay:0,preventSlideshow:false,autoStartSlideshow:false,captionAndToolbarHide:false,captionAndToolbarFlipPosition:false,captionAndToolbarShowEmptyCaptions:true,slideSpeed:1000,captionAndToolbarOpacity:0.8,slideshowDelay:3000,imageScaleMethod:"zoom",fadeInSpeed:250,fadeOutSpeed:250,doubleTapSpeed:300,doubleTapZoomLevel:2.5,enableDrag:true,enableKeyboard:true,enableMouseWheel:true,allowUserZoom:true,allowRotationOnUserZoom:false,fadeInSpeed:false,margin:20,maxUserZoom:5,minUserZoom:0.5,mouseWheelSpeed:500,nextPreviousSlideSpeed:0
+	};
+
+	$("#Gallery8939 a").photoSwipe(options);
+				
+				});
+				
+				
+			}(window, window.jQuery, window.Code.PhotoSwipe));
+
+</script>
+</body>
+</html>	
